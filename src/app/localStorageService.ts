@@ -12,7 +12,7 @@ export class LocalStorageService<T> {
   }
 
   getItemsFromLocalStorage(key?: string) {
-    let savedItems;
+    let savedItems: any;
     if (key != null) {
       savedItems = JSON.parse(localStorage.getItem(key));
     } else {
